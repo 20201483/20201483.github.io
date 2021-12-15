@@ -1,0 +1,6 @@
+若头部写有index_img的相关路径或者绝对路径，则显示图片，若不写，则不显示图片
+
+<font style="font-weight:700;color:#B399FF">文字内容</font>
+<h5 style="font-weight:700;color:#B399FF">标题</h5>
+<h3 style="text-align:center;font-weight:700;color:#B399FF">居中标题</h3>
+<a href="https://..." style="font-weight:700;color:#B399FF">超链接</a>
