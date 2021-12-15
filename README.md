@@ -11,4 +11,4 @@
 - 部署简单。Hexo 可以部署到 Gitte Pages、GitHub Pages 上。
 - 维护性。目前 Hexo 仍在维护。
 
-（看不见我）
+（看不见我看不见我:mask:）
