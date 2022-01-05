@@ -1347,6 +1347,7 @@ mjx-container svg:focus,
   box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
   border-radius: 0.25rem;
   background-color: transparent;
+  margin: 0 auto;
 }
 .index-info {
   display: flex;
@@ -1616,6 +1617,16 @@ post-custom {
   font-size: 0.8em;
   padding: 0.45rem;
   float: right;
+}
+.post-content {
+  position: relative;
+  color: c-666;
+}
+.post-content img {
+  max-width: 100%;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
 }
 @-moz-keyframes post-prev-anim {
   0% {
