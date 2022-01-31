@@ -359,21 +359,21 @@
                   
                 
                 
-  <div id="waline"></div>
+  <div id="twikoo"></div>
   <script type="text/javascript">
-    Fluid.utils.loadComments('#waline', function() {
-      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/@waline/client@1/dist/Waline.min.js', function() {
+    Fluid.utils.loadComments('#comments', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/twikoo@1/dist/twikoo.all.min.js', function() {
         var options = Object.assign(
-          {"serverURL":"https://ctgu20201483-lfu9ltrf4-20201483.vercel.app/","path":"window.location.pathname","placeholder":null,"meta":["nick","mail","link"],"requiredMeta":["nick"],"lang":"zh-CN","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"],"dark":"html[data-user-color-scheme=\"dark\"]","avatar":"retro","avatarCDN":"https://seccdn.libravatar.org/avatar/","avatarForce":false,"wordLimit":0,"pageSize":10,"highlight":true},
+          {"envId":"ctgu20201483-8gi4j6354a076776","region":"ap-shanghai","path":"window.location.pathname"},
           {
-            el: '#waline',
-            path: window.location.pathname
+            el: '#twikoo',
+            path: 'window.location.pathname',
+            onCommentLoaded: function() {
+              Fluid.plugins.initFancyBox('#twikoo .tk-content img:not(.tk-owo-emotion)');
+            }
           }
         )
-        new Waline(options);
-        Fluid.utils.waitElementVisible('#waline .vcontent', () => {
-          Fluid.plugins.initFancyBox('#waline .vcontent img:not(.vemoji)');
-        })
+        twikoo.init(options)
       });
     });
   </script>
@@ -438,7 +438,7 @@
 
   <footer class="text-center mt-5 py-3">
   <div class="footer-content">
-     <a href="https://www.ctgu.edu.cn/" target="_blank" rel="nofollow noopener"><span>CTGU</span></a> <i class="iconfont icon-love"></i> <a href="https://newee.ctgu.edu.cn/" target="_blank" rel="nofollow noopener"><span>EENE</span></a> 
+     <a href="https://www.ctgu.edu.cn/" target="_blank" rel="nofollow noopener"><span>CTGU</span></a> <span class="with-love" style="color: transparent;background:no-repeat url(https://github.githubassets.com/images/icons/emoji/unicode/1f497.png?v8) center/contain" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f497.png?v8">💗</span> <a href="https://newee.ctgu.edu.cn/" target="_blank" rel="nofollow noopener"><span>EENE</span></a> 
   </div>
   
   <div class="statistics">
